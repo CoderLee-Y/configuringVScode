@@ -1,0 +1,31 @@
+//my settings for user.
+//global!
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "files.autoSave": "onFocusChange",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingBrackets": "always",
+    "update.mode": "none",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "cmake.configureOnOpen": true,
+    "debug.onTaskErrors": "debugAnyway",
+    "C_Cpp.vcFormat.space.betweenEmptySquareBrackets": true,
+    "C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets": true,
+    "C_Cpp.vcFormat.space.betweenEmptyParameterListParentheses": true,
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++17",
+    "workbench.statusBar.visible": false,
+    "terminal.integrated.cursorBlinking": true,
+    "editor.formatOnSaveMode": "file",
+    "[cpp]": {
+        "editor.wordBasedSuggestions": false,
+        "editor.formatOnSave": true,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.codeActionsOnSave": {},
+    },
+    "update.enableWindowsBackgroundUpdates": false
+}
