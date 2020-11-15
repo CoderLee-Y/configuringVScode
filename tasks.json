@@ -1,0 +1,105 @@
+//single file and for c plus plus
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+                "-g",
+                "-static-libgcc",
+                "-fexec-charset=GBK"
+            ],
+            "options": {
+                "cwd": "C:\\Program Files\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Debugger",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "dependsOn": "build",
+            "command": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
+
+//for mutilplied c plus plus
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "${fileDirname}\\*.cpp",
+                "-o",
+                "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
+                "-g",
+                "-Wall",
+                "-static-libgcc",
+                "-fexec-charset=GBK",
+                "-std=c++11",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "dependsOn": "build",
+            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "new"
+            }
+        }
+    ]
+}
