@@ -21,3 +21,5 @@ A small step: abandon code::blocks and explore vscode.
  - ctrl shift P: search and command.
  - ctrl K + ctrl R: reference of shortcuts.
  - useful (set by my own): ctrl alt numpad0 :Run this code without debugging.
+ - Ctrl键 + Shift键 + \[ 折叠代码
+ - Ctrl键 + Shift键 + \] 展开代码
